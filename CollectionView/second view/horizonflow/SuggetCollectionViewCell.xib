@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SuggetCollectionViewCell" id="gTV-IL-0wX" customClass="SuggetCollectionViewCell" customModule="CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="380"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="380"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rp-K8-2Vi">
+                        <rect key="frame" x="0.0" y="-8" width="294" height="228"/>
+                        <color key="backgroundColor" red="0.88024848699569702" green="0.056737251579761505" blue="0.23252767324447632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="0NE-JG-HHP">
+                        <rect key="frame" x="0.0" y="221" width="52" height="66.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tlw-1G-5We">
+                        <rect key="frame" x="0.0" y="347.5" width="26" height="16.5"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxd-jo-mSP">
+                        <rect key="frame" x="26.5" y="345.5" width="28" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Tlw-1G-5We" firstAttribute="centerY" secondItem="0NE-JG-HHP" secondAttribute="centerY" multiplier="1.4" id="30J-Yv-CaF"/>
+                <constraint firstItem="Pxd-jo-mSP" firstAttribute="centerX" secondItem="Tlw-1G-5We" secondAttribute="centerX" multiplier="3.1" id="5MW-Wb-sKM"/>
+                <constraint firstItem="7rp-K8-2Vi" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Jxi-ub-uQD"/>
+                <constraint firstItem="0NE-JG-HHP" firstAttribute="centerY" secondItem="7rp-K8-2Vi" secondAttribute="centerY" multiplier="2.4" id="NJq-5x-1sB"/>
+                <constraint firstItem="7rp-K8-2Vi" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" multiplier="0.5" id="clq-ex-L9r"/>
+                <constraint firstItem="Pxd-jo-mSP" firstAttribute="centerY" secondItem="Tlw-1G-5We" secondAttribute="centerY" id="e3V-9T-7Hj"/>
+                <constraint firstItem="Tlw-1G-5We" firstAttribute="width" secondItem="0NE-JG-HHP" secondAttribute="width" multiplier="0.5" id="e4X-1D-Scp"/>
+                <constraint firstItem="0NE-JG-HHP" firstAttribute="leading" secondItem="7rp-K8-2Vi" secondAttribute="leading" id="kPu-sE-oRp"/>
+                <constraint firstItem="7rp-K8-2Vi" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="nuh-nA-K9V"/>
+                <constraint firstItem="7rp-K8-2Vi" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.6" id="oeM-Fu-15j"/>
+                <constraint firstItem="Tlw-1G-5We" firstAttribute="leading" secondItem="0NE-JG-HHP" secondAttribute="leading" id="tKF-CL-jPw"/>
+                <constraint firstItem="Tlw-1G-5We" firstAttribute="height" secondItem="0NE-JG-HHP" secondAttribute="height" multiplier="0.3" id="uEF-tu-A96"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="294" height="380"/>
+            <connections>
+                <outlet property="label" destination="0NE-JG-HHP" id="qCP-mw-cMl"/>
+            </connections>
+            <point key="canvasLocation" x="313.04347826086956" y="236.38392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="eye" catalog="system" width="128" height="81"/>
+    </resources>
+</document>
